@@ -1,0 +1,45 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"> 
+	<view slot="backText">返回</view>
+	<view slot="content">发布到召集令</view> 
+</cu-custom>
+<form>
+	<view class="cu-form-group margin-top">
+		<view class="title">名称：</view>
+		<input placeholder="" bindinput="getName"></input>
+	</view>
+  <!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
+	<view class="cu-form-group margin-top">
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="getDesc" placeholder="召集令详情请说明哦~"></textarea>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">要求：</view>
+		<input placeholder="" bindinput="getNeed"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">联系方式：</view>
+		<input placeholder="电话/微信/QQ" bindinput="getPhone"></input>
+	</view>
+	<view class="cu-bar bg-white margin-top">
+		<view class="action">
+			图片上传
+		</view>
+		<view class="action">
+			{{imgList.length}}/4
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+
+  <button form-type="submit" type="primary" bindtap="post">发布</button>
+</form>

@@ -1,0 +1,65 @@
+{
+  "pages": [
+      "pages/testdisplay/testdisplay",
+    "pages/first/first",
+  
+    
+    
+    "pages/testtest/testtest",
+    "pages/display/display",
+    "pages/my/my",
+    "pages/display2/display2",
+ 
+    "pages/pubishchoose/pubishchoose",
+    "pages/pubish/pubish",
+    "pages/test2/test2",
+    "pages/test3/test3",
+    "pages/index/index",
+    "pages/sky/sky",
+    "pages/mypubishDetail/mypubishDetail",
+    "pages/testpingpun/testpinglun"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#66CDAA",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/display/display",
+        "iconPath": "images/first-1.png",
+        "selectedIconPath": "images/first-2.png",
+        "text": "召集令"
+      },
+      {
+        "pagePath": "pages/sky/sky",
+        "iconPath": "/images/second-1.png",
+        "selectedIconPath": "images/second-2.png",
+        "text": "蓝天"
+      },
+      {
+        "pagePath": "pages/pubishchoose/pubishchoose",
+        "iconPath": "/images/third-1.png",
+        "selectedIconPath": "images/third-2.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/images/four-1.png",
+        "selectedIconPath": "images/four-2.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

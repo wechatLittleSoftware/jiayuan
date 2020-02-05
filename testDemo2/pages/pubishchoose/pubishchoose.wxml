@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">发布</view></cu-custom>
+<view class="top"></view>
+  <view  class="all">
+
+    <view class="view1" bindtap="goPubish" >
+    <image class="imgback" src='/images/5.jpg' mode="aspectFill"></image>
+    </view>
+
+    <view class="view2" bindtap="goPubish">
+    <image class="imgback" src='/images/4.jpg' mode="aspectFill"></image>
+    </view>
+
+  </view>

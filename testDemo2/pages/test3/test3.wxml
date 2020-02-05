@@ -1,0 +1,1 @@
+<button type="primary" class="btn" bindtap="goPubish" >去发布</button>
